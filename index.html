@@ -80,19 +80,35 @@
         <div class="news">
             <div class="area">
                 <div class="new">
-                    <img src="https://i0.wp.com/www.snowyfictions.com/wp-content/uploads/2020/12/iStock-1184358065.jpg?resize=1080%2C675&ssl=1" alt="Xeber 1">
+                    <div class="imag">
+                        <img src="y.jpg" alt="Xeber">
+                    </div>
                     <div class="info">
-                        <h4>14 aprel kimse nese elliyif</h4>
-                        <p>Usaqlar feal olun,ne vilem 14 aprel kimse nese elliyif ama siz oturun nevilem kitaf zad oxuyun,dsagkkjfas, dsadsa dsadsa sasd asadsadsdadas dsadsds dsa dsa</p>
-                        <button>Ətraflı</button>
+                        <div class="titl">
+                            <h4>Anar qatofu neciye sater</h4>
+                        </div>
+                        <div class="text-nw">
+                            <p>Deyilenlere gore anar mustafayev qartofun kilosunu 1.5l sater, ancaq diger qartof satanlarin qartofun kilosunu 2l satmasi hamida maraq oyatdi,fikirler bu idir ki, ya anarin qartofu coxdu, yada bizi zeherleyir</p>
+                        </div>
+                        <div class="button">
+                            <button>Ətraflı</button>
+                        </div>
                     </div>
                 </div>
                 <div class="new">
-                    <img src="https://i0.wp.com/www.snowyfictions.com/wp-content/uploads/2020/12/iStock-1184358065.jpg?resize=1080%2C675&ssl=1" alt="Xeber 1">
+                    <div class="imag">
+                        <img src="y.jpg" alt="Xeber">
+                    </div>
                     <div class="info">
-                        <h4>14 aprel kimse nese elliyif</h4>
-                        <p>Usaqlar feal olun,ne vilem 14 aprel kimse nese elliyif ama siz oturun nevilem kitaf zad oxuyun,dsagkkjfas, dsadsa dsadsa sasd asadsadsdadas dsadsds dsa dsa</p>
-                        <button>Ətraflı</button>
+                        <div class="titl">
+                            <h4>Anar qatofu neciye sater</h4>
+                        </div>
+                        <div class="text-nw">
+                            <p>Deyilenlere gore anar mustafayev qartofun kilosunu 1.5l sater, ancaq diger qartof satanlarin qartofun kilosunu 2l satmasi hamida maraq oyatdi,fikirler bu idir ki, ya anarin qartofu coxdu, yada bizi zeherleyir</p>
+                        </div>
+                        <div class="button">
+                            <button>Ətraflı</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,6 +129,8 @@
     :root{
         --f: 'Beau Rivage', cursive;
     }
+
+   
 
     /* Navbar */
         .navbar{
@@ -365,71 +383,85 @@
 
         .new{
             display: flex;
-            justify-content: space-between;
-            width: min-content;
-        }
-
-        .new h4{
-            width: 80%;
-            text-align: center;
-        }
-
-        .new p{
-            width: 90%;
-            font-size: large;
-            height: 156px;
-        }
-
-        .new button{
-            border: 1px solid black;
-            border-radius: 10px;
-            background-color: transparent;
-            box-shadow: black 0px 0px 3px;
-            padding: 2px 20px 2px 20px;
-            color: black;
-            font-size: 22px;
-            transition: 1s;
-        }
-
-        .new button:hover{
-            box-shadow: black 0px 0px 9px;
-        }
-
-        .new .info{
-            width: 300px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-       
-        .new img{
-            width: 400px;
             height: 300px;
+            width: 700px;
+        }
+
+        .imag,
+        .info{
+
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        .imag img{
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
 
-        @media screen and (max-width: 800px){
+        .titl{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 !important;
+            margin-top: 15px;
+        }
+
+        .titl h4{
+            width: 85%;
+            text-align: center;
+        }
+
+        .text-nw{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 200px;
+        }
+
+        .text-nw p{
+            width: 90%;
+            height: 198px;
+            overflow: hidden;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button button{
+            padding: 0px 15px 0px 15px;
+            font-size: 20px;
+            background: transparent;
+            border: 1px solid black;
+            box-shadow: black 0 0 3px;
+            transition: 1s;
+        }
+
+        .button button:hover{
+            box-shadow: black 0 0 9px;
+        }
+
+        @media screen and (max-width: 1750px) {
+            .new {
+                margin-bottom: 35px;
+            }
+
             .area{
                 justify-content: center;
             }
-            
-            .new{
-                transform: scale(75%);
-            }
         }
 
-        @media screen and (max-width: 550px){
-
-            .news{
-                margin: 0;
-            }
-            
-            .new{
-                transform: scale(50%);
+        @media screen and (max-width: 600px) {
+            .new .titl{
+                font-size: small;
             }
         }
-
     /* News end */
 </style>
 <script>
