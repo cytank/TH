@@ -79,7 +79,7 @@
     <!-- News -->
         <div class="news">
             <div class="area">
-                <div class="new">
+                <div class="new d">
                     <div class="imag">
                         <img src="img/y.jpg" alt="Xeber">
                     </div>
@@ -466,6 +466,16 @@
         }
 
         @media screen and (max-width: 600px) {
+            .new{
+                flex-wrap: wrap;
+            }
+
+            .new:not(.d){
+                margin-top: 280px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
             .new .titl{
                 font-size: small;
             }
@@ -474,9 +484,9 @@
 </style>
 <script>
 
-    // setTimeout(() => {
+    /* setTimeout(() => {
        
-    // }, 8000);
+    }, 8000); */
 
 
     
