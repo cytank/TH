@@ -67,21 +67,20 @@
     <!-- S.Links end -->
 
     <!-- Head -->
-    
         <div class="head-n">
             <div class="photo">
                 <div class="m-phg">
-                    <img src="img/n1.jpg" alt="Xeber">
+                    <a href=""><img src="img/n1.jpg" id="ne1" alt="Xeber"></a>
                 </div>
                 <div class="n-phg">
                     <div class="kj">
-                        <img src="img/aw.jpg" alt="">
+                        <img src="img/aw.jpg" id="ne2" onclick="fnc1()">
                     </div>
                     <div class="kj">
-                        <img src="img/v.jpg" alt="">
+                        <img src="img/v.jpg" id="ne3" onclick="fnc2()">
                     </div>
                     <div class="kj">
-                        <img src="img/e.jpg" alt="">
+                        <img src="img/e.jpg" id="ne4" onclick="fnc3()">
                     </div>
                 </div>
             </div>
@@ -100,7 +99,19 @@
     <!-- News -->
         <div class="news">
             <div class="raar">
+                <div class="onws">
+                    <img src="img/nw2/n (33).jpg">
+                    <h4>"Buta" rəqs kursu</h4>
+                </div>
+                <div class="onws">
 
+                </div>
+                <div class="onws">
+
+                </div>
+                <div class="onws">
+
+                </div>
             </div>  
         </div>
     <!-- News end -->
@@ -311,6 +322,8 @@
         .m-phg,
         .m-phg img{
             width: 100%;
+            height: 570px;
+            object-fit: cover;
         }
 
         .n-phg{
@@ -351,17 +364,75 @@
             display: flex;
             justify-content: space-between;
             height: 10px;
+            background-color: purple;
+            flex-wrap: wrap;
+        }
+
+        .onws{
             background-color: yellowgreen;
+            width: 400px;
+            height: 250px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .onws img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .onws img:hover{
+            filter: contrast(40%);
+        }
+
+        .onws h4 {
+            position: absolute;
+            bottom: 10px;
+            left: 5px;
+            color: white;
+        }
+
+        @media screen and (max-width: 1050px){
+            .raar{
+                justify-content: center;
+            }
         }
 
     /* Head end */
 </style>
 <script>
 
-    /* setTimeout(() => {
-       
-    }, 8000); */
+    const new1 = [document.getElementById("ne1"),"img/n1.jpg"]
+    const new2 = [document.getElementById("ne2"),"img/aw.jpg"]
+    const new3 = [document.getElementById("ne3"),"img/v.jpg"]
+    const new4 = [document.getElementById("ne4"),"img/e.jpg"]
 
+    function loop(){
+        setTimeout(() => {
+            document.getElementById("ne1").src = "img/n1.jpg";
+            loop()
+        }, 5000); 
+    }
+
+    setTimeout(() => {
+            loop()
+    }, 8000); 
+
+    function fnc1(){
+        new1[0].src = new2[1];
+    }
+
+    function fnc2(){
+        new1[0].src = new3[1];
+    }
+
+    function fnc3(){
+        new1[0].src = new4[1];
+    }
+
+    document.querySelector(".m-phg a").href = document.getElementById("ne1").src
 
     
 </script>
