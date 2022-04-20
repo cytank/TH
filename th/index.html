@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Home | Tea-House</title>
+</head><!--  -->
+<body>
+    
+    <!-- Navbar -->
+        <section class="navbar">
+            <div class="nav">
+                <div class="icon row">
+                    <div class="col">
+                        <img src="img/Untitled.png" alt="Tea House Logo">
+                    </div>
+                    <div class="col">
+                        <div class="dsa">
+                            Tea <br> House
+                        </div>
+                    </div> 
+                </div>
+                <div class="links">
+                    <ul class="list">
+                        <a href="#"><li>About<div class="line"></div></li></a>
+                        <a href="#"><li>Contacts<div class="line"></div></li></a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    <!-- Navbar end -->
+
+    <!-- S.Links -->
+        <div class="slinks">
+            <div class="s kl">
+                <div class="fr">
+                    <img src="img/a.svg" alt="icon">
+                </div>
+                <div class="str">
+                    <p>Register</p>
+                </div>
+            </div>
+            <div class="s dr">
+                <div class="fr">
+                    <img src="img/b.svg" alt="icon">
+                </div>
+                <div class="str">
+                    <p>Club's</p>
+                </div>
+            </div>
+            <div class="s rq">
+                <div class="fr">
+                    <img src="img/c.svg" alt="icon">
+                </div>
+                <div class="str">
+                    <p>Lessons</p>
+                </div>
+            </div>
+        </div>
+    <!-- S.Links end -->
+
+    <!-- Head -->
+        <div class="head">
+            <img src="img/b.jpg" class="image" alt="Tea House">
+            <div class="hf">
+                <h1>Bizə qoşul</h1>
+                <span>Xəyallarını gerçəkləşdir</span> 
+            </div>
+        </div>
+    <!-- Head end -->
+
+    <!-- News -->
+        <div class="news">
+            <div class="area">
+                <div class="new d">
+                    <div class="imag">
+                        <img src="img/y.jpg" alt="Xeber">
+                    </div>
+                    <div class="info">
+                        <div class="titl">
+                            <h4>Anar qatofu neciye sater</h4>
+                        </div>
+                        <div class="text-nw">
+                            <p>Deyilenlere gore anar mustafayev qartofun kilosunu 1.5l sater, ancaq diger qartof satanlarin qartofun kilosunu 2l satmasi hamida maraq oyatdi,fikirler bu idir ki, ya anarin qartofu coxdu, yada bizi zeherleyir</p>
+                        </div>
+                        <div class="button">
+                            <button>Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="new">
+                    <div class="imag">
+                        <img src="img/y.jpg" alt="Xeber">
+                    </div>
+                    <div class="info">
+                        <div class="titl">
+                            <h4>Anar qatofu neciye sater</h4>
+                        </div>
+                        <div class="text-nw">
+                            <p>Deyilenlere gore anar mustafayev qartofun kilosunu 1.5l sater, ancaq diger qartof satanlarin qartofun kilosunu 2l satmasi hamida maraq oyatdi,fikirler bu idir ki, ya anarin qartofu coxdu, yada bizi zeherleyir</p>
+                        </div>
+                        <div class="button">
+                            <button>Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- News end -->
+
+
+<style>
+    html,body{
+        height: 100%;
+        background: #d4c4ac;
+    }
+
+    a{
+        text-decoration-line: none;
+    }
+
+    :root{
+        --f: 'Beau Rivage', cursive;
+    }
+
+   
+
+    /* Navbar */
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.212);
+            position: fixed;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .nav{
+            max-height: 150px;
+            position: relative;
+            width: 94%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .icon .col{
+            padding: 0 !important;
+            display: flex;
+            align-items: center;
+        }
+
+        .dsa{
+            color: white;
+            font-size: 24px;
+            text-align: start;
+        }
+
+        .links{
+            display: flex;
+            align-items: center;
+            display: grid;
+        }
+
+        .list{
+            list-style: none;
+            margin: 0 !important;
+            padding: 0 !important;
+            display: flex;
+        }
+
+        .list li{
+            font-size: 23px;
+            color: white;
+            position: relative;
+        }
+
+        .line{
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            background-color: white;
+            bottom: -4px;
+            box-shadow: white 0px 0px 10px;
+            transition: width 1s;
+        }
+
+        .list li:nth-child(1):hover .line{
+            width: 100%;
+        }
+
+        .list a{
+            margin-right: 30px;
+        }
+
+        .icon img{
+            height: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .dsa {
+                font-size: small;
+            }
+
+            .list li{
+                font-size: smaller;
+            }
+
+            .icon img{
+                height: 90px;
+            }
+        }
+        
+    /* Navbar end */
+
+    /* S.Links */
+        .slinks{
+            position: fixed;
+            top: 150px;
+            right: 0px;
+            z-index: 2;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        .s{
+            height: 50px;
+            display: flex;
+            transform: translate(120px);
+            transition: 1s;
+        }
+        
+        .str{
+            background-image: linear-gradient(to right, #DBD1B2,#Fffae7);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 120px;
+        }
+
+        .str p{
+            text-indent: 10px;
+            text-align: start;
+            color: black;
+            font-family: var(--f);
+            font-size: larger;
+            font-weight: 600;
+        } 
+
+        p{
+            margin: 0;
+        }
+
+        .fr{
+            height: 100%;
+            width: 55px;
+            background: #DBD1B2;
+            border-right: 1px solid gray;
+            border-radius: 20px 0 0 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fr img{
+            transform: scale(50%);
+        }
+
+        .kl:hover {
+            transform: translate(0);
+        }
+
+        .dr:hover {
+            transform: translate(0);
+        }
+
+        .rq:hover {
+            transform: translate(0);
+        }
+    /* S.links end */
+
+    /* Head */
+        .head{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hf h1{
+            color: white;
+            font-size: 55px;
+            width: 100%;
+            text-align: center;
+            font-family: var(--f);
+            animation: b-txt 1 10s;
+            opacity: 1;
+            margin: 0;
+        }
+
+        .hf span{
+            color: white;
+            font-size: 55px;
+            width: 100%;
+            text-align: center;
+            font-family: var(--f);
+            animation: b-txt2 1 10s;
+            opacity: 1;
+        }
+
+        .image{
+            object-fit: cover;
+            width: 100%;
+            height: 100% !important;
+            position: absolute;
+            z-index: -1;
+            filter: contrast(85%);
+        }
+
+        @keyframes b-txt{
+            0%{
+                opacity: 0;
+            }
+
+            10%{
+                opacity: 0;
+            }
+
+            20%{
+                opacity: 1;
+            }
+
+            70%{
+                opacity: 1;
+            }
+
+            90%{
+                opacity: 1;
+            }
+        }
+
+        @keyframes b-txt2{
+            0%{
+                opacity: 0;
+            }
+
+            30%{
+                opacity: 0;
+            }
+
+            40%{
+                opacity: 1;
+            }
+
+
+            90%{
+                opacity: 1;
+            }
+        }
+
+    /* Head end */
+
+    /* News */
+        .news{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .area{
+            width: 80%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .new{
+            display: flex;
+            height: 300px;
+            width: 700px;
+        }
+
+        .imag,
+        .info{
+
+            height: 100%;
+            width: 100%;
+            
+        }
+
+        .imag img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .titl{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0 !important;
+            margin-top: 15px;
+        }
+
+        .titl h4{
+            width: 85%;
+            text-align: center;
+        }
+
+        .text-nw{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            height: 200px;
+        }
+
+        .text-nw p{
+            width: 90%;
+            height: 198px;
+            overflow: hidden;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button button{
+            padding: 0px 15px 0px 15px;
+            font-size: 20px;
+            background: transparent;
+            border: 1px solid black;
+            box-shadow: black 0 0 3px;
+            transition: 1s;
+        }
+
+        .button button:hover{
+            box-shadow: black 0 0 9px;
+        }
+
+        @media screen and (max-width: 1750px) {
+            .new {
+                margin-bottom: 35px;
+            }
+
+            .area{
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .new{
+                flex-wrap: wrap;
+            }
+
+            .new:not(.d){
+                margin-top: 280px;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .new .titl{
+                font-size: small;
+            }
+        }
+    /* News end */
+</style>
+<script>
+
+    /* setTimeout(() => {
+       
+    }, 8000); */
+
+
+    
+</script>
+</body>
+</html>
