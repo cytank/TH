@@ -68,53 +68,54 @@
 
     <!-- Head -->
         <div class="head-n">
-            <div class="photo">
-                <div class="m-phg">
-                    <a href=""><img src="img/n1.jpg" id="ne1" alt="Xeber"></a>
+            <div class="g">
+                <div class="photo">
+                    <div class="m-phg">
+                        <img src="img/n1.jpg" id="ne1" alt="Xeber">
+                    </div>
+                    <div class="n-phg">
+                        <div class="kj">
+                            <img src="img/aw.jpg" id="ne2" onclick="fnc(1)">
+                        </div>
+                        <div class="kj">
+                            <img src="img/v.jpg" id="ne3" onclick="fnc(2)">
+                        </div>
+                        <div class="kj">
+                            <img src="img/e.jpg" id="ne4" onclick="fnc(3)">
+                        </div>
+                        
+                    </div>
                 </div>
-                <div class="n-phg">
-                    <div class="kj">
-                        <img src="img/aw.jpg" id="ne2" onclick="fnc1()">
-                    </div>
-                    <div class="kj">
-                        <img src="img/v.jpg" id="ne3" onclick="fnc2()">
-                    </div>
-                    <div class="kj">
-                        <img src="img/e.jpg" id="ne4" onclick="fnc3()">
+                <div class="txt-h">
+                    <div class="txt-h-m">
+                        <h2>Bize qosul Xeyallarini gerceklesdir</h2>
+                        <p>Bizə Qoşul, Xəyalların Gerçəkləşsin!
+                            Məqsədimiz inkişaf etmiş savadlı və sağlam gənclikdir. 
+                            18 aprel 2022-ci il tarixində  "Yunus Emre Institutu" və "İnkişaf və Təhsil Mərkəzi"-nin birgə layihəsi - "Türk Geleneksel Oxçuluq Kursları"nın növbəti (üçüncü çağırış) kurslarına start verildi. Məşqlər iki qrup halında keçirildi və 18 nəfər uşaq, yeniyetmələr və gənclər iştirak etdilər. Kursların yekununda iştirakçılar oxçuluq yarışında qüvvələrini sınayacaqlar.</p>
                     </div>
                 </div>
             </div>
-            <div class="txt-h">
-                <div class="txt-h-m">
-                    <h2>Bize qosul Xeyallarini gerceklesdir</h2>
-                    <p>Bizə Qoşul, Xəyalların Gerçəkləşsin!
-                        Məqsədimiz inkişaf etmiş savadlı və sağlam gənclikdir. 
-                        18 aprel 2022-ci il tarixində  "Yunus Emre Institutu" və "İnkişaf və Təhsil Mərkəzi"-nin birgə layihəsi - "Türk Geleneksel Oxçuluq Kursları"nın növbəti (üçüncü çağırış) kurslarına start verildi. Məşqlər iki qrup halında keçirildi və 18 nəfər uşaq, yeniyetmələr və gənclər iştirak etdilər. Kursların yekununda iştirakçılar oxçuluq yarışında qüvvələrini sınayacaqlar.</p>
-                </div>
+            <div class="news">
+                <div class="raar">
+                    <div class="onws">
+                        <img src="img/nw2/n (33).jpg">
+                        <h4>"Buta" rəqs kursu</h4>
+                    </div>
+                    <div class="onws">
+    
+                    </div>
+                    <div class="onws">
+    
+                    </div>
+                    <div class="onws">
+    
+                    </div>
+                </div>  
             </div>
         </div>
 
     <!-- Head end -->
 
-    <!-- News -->
-        <div class="news">
-            <div class="raar">
-                <div class="onws">
-                    <img src="img/nw2/n (33).jpg">
-                    <h4>"Buta" rəqs kursu</h4>
-                </div>
-                <div class="onws">
-
-                </div>
-                <div class="onws">
-
-                </div>
-                <div class="onws">
-
-                </div>
-            </div>  
-        </div>
-    <!-- News end -->
 
 
 <style>
@@ -296,10 +297,10 @@
         .head-n{
             width: 80%;
             height: 1000px;
-            top: 150px;
+            top: 130px;
             position: relative;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
         }
 
         .photo,
@@ -331,10 +332,12 @@
             width: 100%;
             justify-content: space-between;
             margin-top: 10px;
+            flex-wrap: wrap;
         }
 
         .kj{
             width: 30%;
+            margin-bottom: 20px;
         }
 
         .kj img{
@@ -357,20 +360,20 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-top: 50px;
         }
 
         .raar{
-            width: 80%;
+            width: 100%;
             display: flex;
             justify-content: space-between;
-            height: 10px;
-            background-color: purple;
+
             flex-wrap: wrap;
         }
 
         .onws{
             background-color: yellowgreen;
-            width: 400px;
+            width: 49.5%;
             height: 250px;
             margin-bottom: 30px;
             position: relative;
@@ -384,7 +387,7 @@
         }
 
         .onws img:hover{
-            filter: contrast(40%);
+            filter: brightness(40%);
         }
 
         .onws h4 {
@@ -394,7 +397,29 @@
             color: white;
         }
 
-        @media screen and (max-width: 1050px){
+        .g{
+            width: 100%;
+            display: flex;
+        }
+
+        @media screen and (max-width: 1300px){
+            .g{
+                flex-direction: column-reverse;
+            }
+
+            .photo,
+            .txt-h{
+                width: 100%;
+            }
+        }
+
+        
+
+        @media screen and (max-width: 850px){
+            .onws{
+                width: 100%;
+                height: 300px;
+            }
             .raar{
                 justify-content: center;
             }
@@ -404,10 +429,8 @@
 </style>
 <script>
 
-    const new1 = [document.getElementById("ne1"),"img/n1.jpg"]
-    const new2 = [document.getElementById("ne2"),"img/aw.jpg"]
-    const new3 = [document.getElementById("ne3"),"img/v.jpg"]
-    const new4 = [document.getElementById("ne4"),"img/e.jpg"]
+    const xeber = document.getElementById("ne1")
+    const docsnew = ["img/n1.jpg","img/aw.jpg","img/v.jpg","img/e.jpg"]
 
     function loop(){
         setTimeout(() => {
@@ -417,22 +440,14 @@
     }
 
     setTimeout(() => {
-            loop()
-    }, 8000); 
+        loop()
+    }, 1000); 
 
-    function fnc1(){
-        new1[0].src = new2[1];
+    function fnc(x){
+        xeber.src = docsnew[x];
     }
 
-    function fnc2(){
-        new1[0].src = new3[1];
-    }
 
-    function fnc3(){
-        new1[0].src = new4[1];
-    }
-
-    document.querySelector(".m-phg a").href = document.getElementById("ne1").src
 
     
 </script>
