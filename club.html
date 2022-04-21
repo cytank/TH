@@ -69,16 +69,16 @@
 
     <!-- Lessons -->
         <div class="lessons">
-            <div class="lesson" id="Prog"></div>
-            <div class="lesson" id="Sahmat"></div>
-            <div class="lesson" id="Xalca"></div>
-            <div class="lesson" id="reqs"></div>
-            <div class="lesson" id="resm"></div>
-            <div class="lesson" id="ingilis"></div>
-            <div class="lesson" id="gurcu"></div>
-            <div class="lesson" id="riyaz"></div>
-            <div class="lesson" id="piano"></div>
-            <div class="lesson" id="mentiq"></div>
+            <div class="lesson" id="1"></div>
+            <div class="lesson" id="2"></div>
+            <div class="lesson" id="3"></div>
+            <div class="lesson" id="4"></div>
+            <div class="lesson" id="5"></div>
+            <div class="lesson" id="6"></div>
+            <div class="lesson" id="7"></div>
+            <div class="lesson" id="8"></div>
+            <div class="lesson" id="9"></div>
+            <div class="lesson" id="0"></div>
         </div>
     <!-- Lessons end -->
 
@@ -345,83 +345,95 @@
 <script>
 
 /* programist */   let pr = {
-        "techer": "Samirə Mamedova",
+        "techer": "Emin Mamedov",
         "foto": "img/cisi.jpeg",
-        "ders": "Programist",
-        "vaxt": "16-00 : 17-00",
-        "gun": "Çərşənbə A, Cümə A, Şənbə"
+        "ders": "IT",
+        "vaxt": "15-00",
+        "gun": "Çərşənbə A, Cümə A, Şənbə",
+        "display": "block"
     }
 
 /* sahmat */    let sr = {
-        "techer": "Davit Xizanişvili",
+        "techer": "Zülfinaz Əliyeva",
         "foto": "img/cisi.jpeg",
-        "ders": "Şahmat",
-        "vaxt": "10-00 : 14-00 : 14-00",
-        "gun": "Bazar ərtəsi, Cümə A,  Cümə, Şənbə"
+        "ders": "Ümumi bilik",
+        "vaxt": "14-00",
+        "gun": "Şənbə",
+        "display": "block"
     }
 
 /* xalca */    let xl = {
-        "techer": "Nabat Anazarova",
+        "techer": "Nənəxanım Qurbanova",
         "foto": "img/cisi.jpeg",
-        "ders": "Xalça",
-        "vaxt": "11-00",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
+        "ders": "Gürcü danışıq",
+        "vaxt": "13-00",
+        "gun": "Şənbə",
+        "display": "block"
     }
 
 /* reqs */    let rq = {
-        "techer": "Keti Kopilaşvili",
+        "techer": "Zeynəb Karakhmazlı",
         "foto": "img/cisi.jpeg",
-        "ders": "Rəqs",
-        "vaxt": "14-45 : 16-15",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
+        "ders": "İngilis danışıq",
+        "vaxt": "12-00",
+        "gun": "Şənbə",
+        "display": "block"
     }
      
 /* ingilis */    let ing = {
-        "techer": "Aygün Mamedova",
+        "techer": "Alina Garibova",
         "foto": "img/cisi.jpeg",
-        "ders": "İngilis Dili",
-        "vaxt": "14-00 : 15-00 : 16-00 :",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
+        "ders": "Gənclər və cəmmiyyət",
+        "vaxt": "13-00",
+        "gun": "Şənbə",
+        "display": "block",
     }
 
 /* mentiq */    let ment = {
-        "techer": "Abbas Abbasov",
+        "techer": "Süleyman Novruzov",
         "foto": "img/cisi.jpeg",
-        "ders": "Məntiq",
-        "vaxt": "16-00 : 17-00",
-        "gun": "Çərşənbə A, Cümə A, Şənbə"
+        "ders": "Futbol",
+        "vaxt": "13-00",
+        "gun": "Şənbə",
+        "display": "block"
     }
 /* piano */    let pi = {
         "techer": "Rahilə Ataxəlilova",
         "foto": "img/cisi.jpeg",
         "ders": "Piano",
         "vaxt": "11-00",
-        "gun": "Çərşənbə A, Cümə A, Şənbə"
+        "gun": "Çərşənbə A, Cümə A, Şənbə",
+        "display": "none"
     }
 /* resm */   let re = {
         "techer": "Günel Zeynalova",
         "foto": "img/cisi.jpeg",
         "ders": "Rəsm",
         "vaxt": "14-00 : 15-30",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
+        "gun": "Bazar ərtəsi,Çərşənbə , Cümə ",
+        "display": "none"
     }
 /* gurcu */    let gu = {
         "techer": "Natela Şubatidze",
         "foto": "img/cisi.jpeg",
         "ders": "Gürcü",
         "vaxt": "14-00 : 15-00 : 16-00 ",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
+        "gun": "Bazar ərtəsi,Çərşənbə , Cümə ",
+        "display": "none"
     }
 /* riyaziyyat */    let riy = {
         "techer": "Günel Abdullayeva",
         "foto": "img/cisi.jpeg",
         "ders": "Riyaziyat",
         "vaxt": "16-00 : 17-00",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
+        "gun": "Bazar ərtəsi,Çərşənbə , Cümə ",
+        "display": "none"
     }
     
 
-/* programist */    document.getElementById("Prog").innerHTML = `
+/* programist */ 
+    document.getElementById("1").style.display = pr.display;
+   document.getElementById("1").innerHTML = `
         <div class="imc">
             <img src="`+ pr.foto +`" alt="Sahmat">
         </div>
@@ -440,7 +452,9 @@
         </div>
         `
 
-/* sahmat */    document.getElementById("Sahmat").innerHTML = `
+/* sahmat */    
+    document.getElementById("2").style.display = sr.display;
+    document.getElementById("2").innerHTML = `
         <div class="imc">
             <img src="`+ sr.foto +`" alt="Sahmat">
         </div>
@@ -459,7 +473,9 @@
         </div>
         `
 
-/* xalca */    document.getElementById("Xalca").innerHTML = `
+/* xalca */    
+    document.getElementById("3").style.display = xl.display;
+    document.getElementById("3").innerHTML = `
         <div class="imc">
             <img src="`+ xl.foto +`" alt="Sahmat">
         </div>
@@ -478,7 +494,9 @@
         </div>
         `
 
-/* reqs */    document.getElementById("reqs").innerHTML = `
+/* reqs */    
+    document.getElementById("4").style.display = rq.display;
+    document.getElementById("4").innerHTML = `
         <div class="imc">
             <img src="`+ rq.foto +`" alt="Sahmat">
         </div>
@@ -497,7 +515,9 @@
         </div>
         `
 
-/* resm */    document.getElementById("resm").innerHTML = `
+/* resm */    
+    document.getElementById("6").style.display = re.display;
+    document.getElementById("6").innerHTML = `
         <div class="imc">
             <img src="`+ re.foto +`" alt="Sahmat">
         </div>
@@ -515,7 +535,9 @@
             <button>Bizə qoşul</button>
         </div>
         `
-/* Ingilis */    document.getElementById("ingilis").innerHTML = `
+/* Ingilis */    
+    document.getElementById("5").style.display = ing.display;
+    document.getElementById("5").innerHTML = `
         <div class="imc">
             <img src="`+ ing.foto +`" alt="Sahmat">
         </div>
@@ -533,8 +555,10 @@
             <button>Bizə qoşul</button>
         </div>
         `
-/* Gurcu */    document.getElementById("gurcu").innerHTML = `
-<div class="imc">
+/* Gurcu */    
+    document.getElementById("7").style.display = gu.display;
+    document.getElementById("7").innerHTML = `
+        <div class="imc">
             <img src="`+ gu.foto +`" alt="Sahmat">
         </div>
         <div class="inf">
@@ -552,8 +576,10 @@
         </div>
         `
 
-/* Riyaziyyat */    document.getElementById("riyaz").innerHTML = `
-            <div class="imc">
+/* Riyaziyyat */    
+    document.getElementById("8").style.display = riy.display;
+    document.getElementById("8").innerHTML = `
+        <div class="imc">
             <img src="`+ riy.foto +`" alt="Sahmat">
         </div>
         <div class="inf">
@@ -570,8 +596,10 @@
             <button>Bizə qoşul</button>
         </div>
         `
-/* Piano */    document.getElementById("piano").innerHTML = `
-    <div class="imc">
+/* Piano */    
+    document.getElementById("9").style.display = pi.display;
+    document.getElementById("9").innerHTML = `
+        <div class="imc">
             <img src="`+ pi.foto +`" alt="Sahmat">
         </div>
         <div class="inf">
@@ -588,7 +616,9 @@
             <button>Bizə qoşul</button>
         </div>
         `
-/* Mentiq */    document.getElementById("mentiq").innerHTML = `
+/* Mentiq */    
+    document.getElementById("0").style.display = ment.display;    
+    document.getElementById("0").innerHTML = `
         <div class="imc">
             <img src="`+ ment.foto +`" alt="Sahmat">
         </div>
