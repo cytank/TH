@@ -93,7 +93,7 @@
                                 18 aprel 2022-ci il tarixində  "Yunus Emre Institutu" və "İnkişaf və Təhsil Mərkəzi"-nin birgə layihəsi - "Türk Geleneksel Oxçuluq Kursları"nın növbəti (üçüncü çağırış) kurslarına start verildi. Məşqlər iki qrup halında keçirildi və 18 nəfər uşaq, yeniyetmələr və gənclər iştirak etdilər. Kursların yekununda iştirakçılar oxçuluq yarışında qüvvələrini sınayacaqlar.</p>
                         </div>
                         <div class="button">
-                            <a href="new.html"><button>Ətraflı</button></a>
+                            <a href="new.html#new1"><button>Ətraflı</button></a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                             <p>Bizə Qoşul, Xəyalların Gerçəkləşsin!16 aprel 2022-ci il tarixində "Tea House"da rəqs kursunun və "Tea House"-un "Buta" rəqs qrupunun üzvləri valideynlər üçün hesabat konserti verdilər. Konsertdə gənclər Gürcü və Azərbaycan milli rəqslərini nümayiş etdilər.</p>
                         </div>
                         <div class="button">
-                            <button>Ətraflı</button>
+                            <a href="new.html#new2"><button>Ətraflı</button></a>
                         </div>
                     </div>
                 </div>
@@ -130,6 +130,10 @@
 
     :root{
         --f: 'Beau Rivage', cursive;
+    }
+
+    ::selection{
+        background-color: rgba(255, 255, 0, 0.466);
     }
 
    
@@ -388,13 +392,12 @@
             height: 50px;
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
         }
 
         .new{
             display: flex;
             height: 300px;
-            width: 700px;
+            width: 48%;
         }
 
         .imag,
@@ -451,26 +454,29 @@
             background: transparent;
             border: 1px solid black;
             box-shadow: black 0 0 3px;
-            transition: 1s;
+            transition: 0.5s;
         }
 
         .button button:hover{
-            box-shadow: black 0 0 9px;
+            box-shadow: black 5px 5px 3px;
         }
 
-        @media screen and (max-width: 1750px) {
-            .new {
-                margin-bottom: 35px;
-            }
-
+        @media screen and (max-width: 1500px) {
             .area{
-                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .new{
+                margin-bottom: 50px;
+                width: 90%;
             }
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 800px) {
             .new{
                 flex-wrap: wrap;
+                
             }
 
             .new:not(.d){

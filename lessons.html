@@ -69,10 +69,34 @@
 
     <!-- Lessons -->
         <div class="lessons">
-            <div class="lesson" id="Prog"></div>
-            <div class="lesson" id="Sahmat"></div>
-            <div class="lesson" id="Xalca"></div>
-            <div class="lesson" id="reqs"></div>
+            <div class="lesson" id="Prog">
+                <div class="image">
+                    <img src="img/cisi.jpeg" alt="Programist dersi tea house">
+                    <button>Ətrafli</button>
+                </div>
+                <div class="txt"><span>Programist</span></div>
+            </div>
+            <div class="lesson" id="Sahmat">
+                <div class="image">
+                    <img src="img/cisi.jpeg" alt="Programist dersi tea house">
+                    <button>Ətrafli</button>
+                </div>
+                <div class="txt"><span>Sahmat</span></div>
+            </div>
+            <div class="lesson" id="Xalca">
+                <div class="image">
+                    <img src="img/cisi.jpeg" alt="Programist dersi tea house">
+                    <button>Ətrafli</button>
+                </div>
+                <div class="txt"><span>Xalca</span></div>
+            </div>
+            <div class="lesson" id="reqs">
+                <div class="image">
+                    <img src="img/cisi.jpeg" alt="Programist dersi tea house">
+                    <button>Ətrafli</button>
+                </div>
+                <div class="txt"><span>İngilis</span></div>
+            </div>
             <div class="lesson" id="resm"></div>
             <div class="lesson" id="ingilis"></div>
             <div class="lesson" id="gurcu"></div>
@@ -98,8 +122,6 @@
     :root{
         --f: 'Beau Rivage', cursive;
     }
-
-   
 
     /* Navbar */
         .navbar{
@@ -272,345 +294,54 @@
             margin-bottom: 90px;
         }
 
-        .imc{
-            width: 100%;
-            height: 300px;
-            margin-bottom: 10px;
-        }
-
         .lesson img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-
-        .line-y{
-            width: 150px;
-            height: 2px;
-            background: black;
-            margin: 0px 0px 8px 0px;
-        }
-
-        .inf{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            font-family: var(--g);
-            
-        }
-
-        .inf .txt{
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            font-weight: 550 !important;
-        }
-
-        .inf button{
-            padding: 2px 10px 2px 10px;
-            border: black 1px solid;
-            border-radius: 8px;
-            box-shadow: black 0px 0px 10px;
-            font-size: 20px;
-            background-color: transparent;
-            color: white;
-            font-family: var(--g);
-            font-weight: 600;
             transition: 0.5s;
+            position: absolute;
         }
 
-        .inf button:hover {
-            box-shadow: black 0px -1px 10px;
+        .lesson:hover img{
+            filter: brightness(50%);
+            z-index: -1;
         }
 
-        @media screen and (max-width: 1250px) {
-            .lesson{
-                width: 49%;
-            }
+        .lesson .image{
+            height: 300px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        @media screen and (max-width: 1000px) {
-            .lessons{
-                justify-content: center;
-            }
+        .lesson button{
+            opacity: 0;
+            transition: 0.6s;
+            font-size: x-large;
+            background: transparent;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            box-shadow: 0 0 10px white;
+            border-radius: 5px;
+        }
 
-            .lesson{
-                width: 100%;
-            }
+        .lesson:hover button{
+            opacity: 1;
+        }
+
+        .lesson .txt{
+            font-size: 20px;
+            font-weight: 550;
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
         }
     /* Lessons end */
 
     
 </style>
-<script>
-
-/* programist */   let pr = {
-        "techer": "Samirə Mamedova",
-        "foto": "img/cisi.jpeg",
-        "ders": "Programist",
-        "vaxt": "16-00 : 17-00",
-        "gun": "Çərşənbə A, Cümə A, Şənbə"
-    }
-
-/* sahmat */    let sr = {
-        "techer": "Davit Xizanişvili",
-        "foto": "img/cisi.jpeg",
-        "ders": "Şahmat",
-        "vaxt": "10-00 : 14-00 : 14-00",
-        "gun": "Bazar ərtəsi, Cümə A,  Cümə, Şənbə"
-    }
-
-/* xalca */    let xl = {
-        "techer": "Nabat Anazarova",
-        "foto": "img/cisi.jpeg",
-        "ders": "Xalça",
-        "vaxt": "11-00",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
-    }
-
-/* reqs */    let rq = {
-        "techer": "Keti Kopilaşvili",
-        "foto": "img/cisi.jpeg",
-        "ders": "Rəqs",
-        "vaxt": "14-45 : 16-15",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
-    }
-     
-/* ingilis */    let ing = {
-        "techer": "Aygün Mamedova",
-        "foto": "img/cisi.jpeg",
-        "ders": "İngilis Dili",
-        "vaxt": "14-00 : 15-00 : 16-00 :",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
-    }
-
-/* mentiq */    let ment = {
-        "techer": "Abbas Abbasov",
-        "foto": "img/cisi.jpeg",
-        "ders": "Məntiq",
-        "vaxt": "16-00 : 17-00",
-        "gun": "Çərşənbə A, Cümə A, Şənbə"
-    }
-/* piano */    let pi = {
-        "techer": "Rahilə Ataxəlilova",
-        "foto": "img/cisi.jpeg",
-        "ders": "Piano",
-        "vaxt": "11-00",
-        "gun": "Çərşənbə A, Cümə A, Şənbə"
-    }
-/* resm */   let re = {
-        "techer": "Günel Zeynalova",
-        "foto": "img/cisi.jpeg",
-        "ders": "Rəsm",
-        "vaxt": "14-00 : 15-30",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
-    }
-/* gurcu */    let gu = {
-        "techer": "Natela Şubatidze",
-        "foto": "img/cisi.jpeg",
-        "ders": "Gürcü",
-        "vaxt": "14-00 : 15-00 : 16-00 ",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
-    }
-/* riyaziyyat */    let riy = {
-        "techer": "Günel Abdullayeva",
-        "foto": "img/cisi.jpeg",
-        "ders": "Riyaziyat",
-        "vaxt": "16-00 : 17-00",
-        "gun": "Bazar ərtəsi,Çərşənbə , Cümə "
-    }
-    
-
-/* programist */    document.getElementById("Prog").innerHTML = `
-        <div class="imc">
-            <img src="`+ pr.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ pr.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ pr.techer +`</h5>
-                <h5>Vaxt: `+ pr.vaxt +`</h5>
-                <h5>Gün: `+ pr.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-
-/* sahmat */    document.getElementById("Sahmat").innerHTML = `
-        <div class="imc">
-            <img src="`+ sr.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ sr.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ sr.techer +`</h5>
-                <h5>Vaxt: `+ sr.vaxt +`</h5>
-                <h5>Gün: `+ sr.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-
-/* xalca */    document.getElementById("Xalca").innerHTML = `
-        <div class="imc">
-            <img src="`+ xl.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ xl.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ xl.techer +`</h5>
-                <h5>Vaxt: `+ xl.vaxt +`</h5>
-                <h5>Gün: `+ xl.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-
-/* reqs */    document.getElementById("reqs").innerHTML = `
-        <div class="imc">
-            <img src="`+ rq.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ rq.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ rq.techer +`</h5>
-                <h5>Vaxt: `+ rq.vaxt +`</h5>
-                <h5>Gün: `+ rq.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-
-/* resm */    document.getElementById("resm").innerHTML = `
-        <div class="imc">
-            <img src="`+ re.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ re.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ re.techer +`</h5>
-                <h5>Vaxt: `+ re.vaxt +`</h5>
-                <h5>Gün: `+ re.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-/* Ingilis */    document.getElementById("ingilis").innerHTML = `
-        <div class="imc">
-            <img src="`+ ing.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ ing.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ ing.techer +`</h5>
-                <h5>Vaxt: `+ ing.vaxt +`</h5>
-                <h5>Gün: `+ ing.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-/* Gurcu */    document.getElementById("gurcu").innerHTML = `
-<div class="imc">
-            <img src="`+ gu.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ gu.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ gu.techer +`</h5>
-                <h5>Vaxt: `+ gu.vaxt +`</h5>
-                <h5>Gün: `+ gu.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-
-/* Riyaziyyat */    document.getElementById("riyaz").innerHTML = `
-            <div class="imc">
-            <img src="`+ riy.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ riy.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ riy.techer +`</h5>
-                <h5>Vaxt: `+ riy.vaxt +`</h5>
-                <h5>Gün: `+ riy.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-/* Piano */    document.getElementById("piano").innerHTML = `
-    <div class="imc">
-            <img src="`+ pi.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ pi.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ pi.techer +`</h5>
-                <h5>Vaxt: `+ pi.vaxt +`</h5>
-                <h5>Gün: `+ pi.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-/* Mentiq */    document.getElementById("mentiq").innerHTML = `
-        <div class="imc">
-            <img src="`+ ment.foto +`" alt="Sahmat">
-        </div>
-        <div class="inf">
-            <div class="txt">
-                <h4>`+ ment.ders +`</h4>
-                <div class="line-y"></div>
-            </div>
-            <div class="ifo">
-                <h5>Muəllimə: `+ ment.techer +`</h5>
-                <h5>Vaxt: `+ ment.vaxt +`</h5>
-                <h5>Gün: `+ ment.gun +` </h5>
-            </div>
-            <br>
-            <button>Bizə qoşul</button>
-        </div>
-        `
-
-    
-
-
-    
-</script>
+<script src="js/lac.js"></script>
 </body>
 </html>

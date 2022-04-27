@@ -432,19 +432,12 @@
     const xeber = document.getElementById("ne1")
     const docsnew = ["img/n1.jpg","img/aw.jpg","img/v.jpg","img/e.jpg"]
 
-    function loop(){
-        setTimeout(() => {
-            document.getElementById("ne1").src = "img/n1.jpg";
-            loop()
-        }, 5000); 
-    }
-
-    setTimeout(() => {
-        loop()
-    }, 1000); 
-
     function fnc(x){
         xeber.src = docsnew[x];
+        setTimeout(() => {
+            document.getElementById("ne1").src = "img/n1.jpg";
+        }, 5000); 
+
     }
 
 
