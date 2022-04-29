@@ -1,0 +1,182 @@
+html,body{
+    height: 100%;
+    background: #d4c4ac !important;
+}
+
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration-line: none !important;
+}
+
+input:focus{
+    outline: none;
+}
+
+:root{
+    --f: 'Beau Rivage', cursive;
+}
+
+::selection{
+    background-color: rgba(255, 255, 0, 0.466);
+}
+
+/* Navbar */
+    .navbar{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background: rgba(0, 0, 0, 0.212) !important;
+        position: fixed !important;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .nav{
+        max-height: 150px;
+        position: relative;
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icon .col{
+        padding: 0 !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .dsa{
+        color: white;
+        font-size: 24px;
+        text-align: start;
+    }
+
+    .links{
+        display: flex;
+        align-items: center;
+        display: grid;
+    }
+
+    .list{
+        list-style: none;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex;
+    }
+
+    .list li{
+        font-size: 23px;
+        color: white;
+        position: relative;
+    }
+
+    .line{
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        background-color: white;
+        bottom: -4px;
+        box-shadow: white 0px 0px 10px;
+        transition: width 1s;
+    }
+
+    .list li:nth-child(1):hover .line{
+        width: 100%;
+    }
+
+    .list a{
+        margin-right: 30px;
+    }
+
+    .icon img{
+        height: 100px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .dsa {
+            font-size: small;
+        }
+
+        .list li{
+            font-size: smaller;
+        }
+
+        .icon img{
+            height: 90px;
+        }
+    }
+
+/* Navbar end */
+
+/* S.Links */
+    .slinks{
+        position: fixed;
+        top: 150px;
+        right: 0px;
+        z-index: 2;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .s{
+        height: 50px;
+        display: flex;
+        transform: translate(120px);
+        transition: 1s;
+    }
+
+    .str{
+        background-image: linear-gradient(to right, #DBD1B2,#Fffae7);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 120px;
+    }
+
+    .str p{
+        text-indent: 10px;
+        text-align: start;
+        color: black;
+        font-family: var(--f);
+        font-size: larger;
+        font-weight: 600;
+        margin: 0px;
+    } 
+
+    p{
+        margin: 0;
+    }
+
+    .fr{
+        height: 100%;
+        width: 55px;
+        background: #DBD1B2;
+        border-right: 1px solid gray;
+        border-radius: 20px 0 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fr img{
+        transform: scale(50%);
+    }
+
+    .kl:hover {
+        transform: translate(0);
+    }
+
+    .dr:hover {
+        transform: translate(0);
+    }
+
+    .rq:hover {
+        transform: translate(0);
+    }
+/* S.links end */

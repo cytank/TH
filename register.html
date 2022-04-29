@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+    <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Home | Tea-House</title>
+</head><!--  -->
+<body>
+    
+    <!-- Navbar -->
+        <section class="navbar">
+            <div class="nav">
+                <div class="icon row">
+                    <div class="col">
+                       <a href="index.html"><img src="img/Untitled.png" alt="Tea House Logo"></a>
+                    </div>
+                    <div class="col">
+                        <div class="dsa">
+                            Tea <br> House
+                        </div>
+                    </div> 
+                </div>
+                <div class="links">
+                    <ul class="list">
+                        <a href="#"><li>About<div class="line"></div></li></a>
+                        <a href="#"><li>Contacts<div class="line"></div></li></a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    <!-- Navbar end -->
+
+    <!-- S.Links -->
+        <div class="slinks">
+            <div class="s kl">
+                <div class="fr">
+                    <img src="img/a.svg" alt="icon">
+                </div>
+                <div class="str">
+                    <p>Register</p>
+                </div>
+            </div>
+            <div class="s dr">
+                <div class="fr">
+                    <img src="img/b.svg" alt="icon">
+                </div>
+                <div class="str">
+                    <p>Club's</p>
+                </div>
+            </div>
+            <div class="s rq">
+                <a href="lessons.html"><div class="fr">
+                    <img src="img/c.svg" alt="icon">
+                </div></a>
+                <div class="str">
+                    <p>Lessons</p>
+                </div>
+            </div>
+        </div>
+    <!-- S.Links end -->
+
+    <!-- Register -->
+        <div class="form">
+            <form action="">
+                <div class="linkv">
+                    <div class="klb">
+                        <h1>Klublar</h1>
+                        <div class="chcbx"><input type="checkbox" name="it"><label for="it">It</label></div>
+                        <div class="chcbx"><input type="checkbox" name="chess"><label for="chess">Şahmat</label></div>
+                        <div class="chcbx"><input type="checkbox" name="ub"><label for="ub">Ümumi bilik</label></div>
+                        <div class="chcbx"><input type="checkbox" name="gvc"><label for="gvc">Gənclər və cəmiyyət</label></div>
+                    </div>
+                    <div class="drs">
+                        <h1>Dərslər</h1>
+                        <div class="chcbx"><input type="checkbox" name="Programistlik"><label for="it">Programistlik</label></div>
+                        <div class="chcbx"><input type="checkbox" name="Şahmat"><label for="Şahmat">Şahmat</label></div>
+                        <div class="chcbx"><input type="checkbox" name="İngilis"><label for="İngilis">İngilis</label></div>
+                        <div class="chcbx"><input type="checkbox" name="Gürcu"><label for="Gürcu">Gürcü</label></div>
+                    </div>
+                </div>  
+                <div class="input">
+                    <h2>Qeydiyyat</h2>
+                    <div class="inputs">
+                        <input type="text" placeholder="Ad" maxlength="15" name="ad" required>
+                        <input type="text" placeholder="Soyad" maxlength="15" name="soyad" required>
+                    </div>
+                    <div class="inputs">
+                        <input type="number" id="age" placeholder="Yaş" min="9" name="yas" required>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" placeholder="+995" disabled>
+                        <input type="text" placeholder="Telefon" maxlength="9" name="telefon" required>
+                    </div>
+                    <input type="submit" class="submit" value="Qeydiyyat">
+                </div>
+            </form>
+        </div>
+    <!-- Register end -->
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .form{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form form{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 150px;
+    }
+    
+    .linkv,
+    .input{
+        width: 40%;
+    }
+
+    .linkv h1{
+        font-family: 'Satisfy', cursive;
+        font-size: 50px;
+    }
+
+    .chcbx input{
+        background-color: transparent;
+    }
+
+    .chcbx label{
+        font-size: 27px;
+        text-indent: 10px;
+    }
+
+    .drs{
+        margin-top: 75px;
+    }
+
+    .input{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input h2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .input input{
+        background: none;
+        border-bottom: 1px solid black !important;
+        border: none;
+    }
+
+    .input input::placeholder{
+        text-indent: 3px !important;
+    }
+
+    .inputs{
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .inputs:nth-child(3) input{
+        width: 100%;
+    }
+
+    .inputs:nth-child(4) input:nth-child(1){width: 50px;}
+    .inputs:nth-child(4) input:nth-child(2){width: 330px;}
+
+    .submit{
+        border: 1px solid black !important;
+        padding: 2px 15px;
+        margin-top: 20px;
+    }
+</style>
+</body>
+</html>
