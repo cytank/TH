@@ -1,6 +1,7 @@
 html,body{
     height: 100%;
     background: #d4c4ac !important;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -9,6 +10,7 @@ html,body{
 
 a{
     text-decoration-line: none !important;
+    color: #212529 !important;
 }
 
 input:focus{
