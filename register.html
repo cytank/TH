@@ -74,17 +74,33 @@
                 <div class="linkv">
                     <div class="klb">
                         <h1>Klublar</h1>
-                        <div class="chcbx"><input type="checkbox" name="it"><label for="it">It</label></div>
-                        <div class="chcbx"><input type="checkbox" name="chess"><label for="chess">Şahmat</label></div>
-                        <div class="chcbx"><input type="checkbox" name="ub"><label for="ub">Ümumi bilik</label></div>
-                        <div class="chcbx"><input type="checkbox" name="gvc"><label for="gvc">Gənclər və cəmiyyət</label></div>
+                        <div class="chcbx"><input type="checkbox" id="n" name="it"><label for="it">It</label></div>
+                        <div class="chcbx "><input type="checkbox" name="chess" onclick="mycage(this)"><label for="chess">Şahmat</label></div>
+                        <div class="chcbx"><input type="checkbox" id="n2" name="ub"><label for="ub">Ümumi bilik</label></div>
+                        <div class="chcbx"><input type="checkbox" id="n3" name="gvc"><label for="gvc">Gənclər və cəmiyyət</label></div>
+                        <div class="chcbx"><input type="checkbox" id="n4" name="gvc"><label for="gvc">Ingilis Danışıq</label></div>
+                        <div class="chcbx"><input type="checkbox" id="n5" name="gvc"><label for="gvc">Gürcü Danışıq</label></div>
                     </div>
-                    <div class="drs">
+                    
+                    <div class="drs"> 
                         <h1>Dərslər</h1>
-                        <div class="chcbx"><input type="checkbox" name="Programistlik"><label for="it">Programistlik</label></div>
-                        <div class="chcbx"><input type="checkbox" name="Şahmat"><label for="Şahmat">Şahmat</label></div>
-                        <div class="chcbx"><input type="checkbox" name="İngilis"><label for="İngilis">İngilis</label></div>
-                        <div class="chcbx"><input type="checkbox" name="Gürcu"><label for="Gürcu">Gürcü</label></div>
+                        <div class="wh">
+                            <div class="halg">
+                                <div class="chcbx"><input type="checkbox" id="n6" name="Programistlik"><label for="it">Programistlik</label></div>
+                                <div class="chcbx"><input type="checkbox" name="Şahmat" onclick="mycage(this)"><label for="Şahmat">Şahmat</label></div>
+                                <div class="chcbx"><input type="checkbox" id="n7" name="İngilis"><label for="İngilis">İngilis</label></div>
+                                <div class="chcbx"><input type="checkbox" id="n8" name="Gürcu"><label for="Gürcu">Gürcü</label></div>
+                                <div class="chcbx"><input type="checkbox" id="n9" name="Məntiq"><label for="Məntiq">Məntiq</label></div>
+                                </div>
+                            <div class="halg2">
+                                <div class="chcbx"><input type="checkbox" id="n10" name="Pianino"><label for="Pianino">Pianino</label></div>
+                                <div class="chcbx"><input type="checkbox" id="n11" name="Riyaziyyat"><label for="Riyaziyyat">Riyaziyyat</label></div>
+                                <div class="chcbx"><input type="checkbox" onclick="mycage(this)" name="Rəsm"><label for="Rəsm">Rəsm</label></div>
+                                <div class="chcbx"><input type="checkbox" onclick="mycage(this)" name="Xalça"><label for="Xalça">Xalça</label></div>
+                                <div class="chcbx"><input type="checkbox" onclick="mycage(this)" name="Rəqs"><label for="Rəqs">Rəqs</label></div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>  
                 <div class="input">
@@ -94,13 +110,13 @@
                         <input type="text" placeholder="Soyad" maxlength="15" name="soyad" required>
                     </div>
                     <div class="inputs">
-                        <input type="number" id="age" placeholder="Yaş" min="9" name="yas" required>
+                        <input type="number" id="age" placeholder="Yaş" min="13" max="30" name="yas" required>
                     </div>
                     <div class="inputs">
                         <input type="text" placeholder="+995" disabled>
                         <input type="text" placeholder="Telefon" maxlength="9" name="telefon" required>
                     </div>
-                    <input type="submit" class="submit" value="Qeydiyyat">
+                    <input type="submit" id="submit" value="Qeydiyyat">
                 </div>
             </form>
         </div>
@@ -174,7 +190,7 @@
         width: 400px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
 
     .inputs:nth-child(3) input{
@@ -184,11 +200,36 @@
     .inputs:nth-child(4) input:nth-child(1){width: 50px;}
     .inputs:nth-child(4) input:nth-child(2){width: 330px;}
 
-    .submit{
+    #submit{
         border: 1px solid black !important;
         padding: 2px 15px;
         margin-top: 20px;
     }
+
+    .wh{
+        display: flex;
+    }
+
+    .halg{
+        margin-right: 130px;
+    }
+
+
+
 </style>
 </body>
+<script src="js/main.js"></script>
+<script>
+    var diss = document.getElementById("n")
+    var diss2 = document.getElementById("n2")
+    var diss3 = document.getElementById("n3")
+    var diss4 = document.getElementById("n4")
+    var diss5 = document.getElementById("n5")
+    var diss6 = document.getElementById("n6")
+    var diss7 = document.getElementById("n7")
+    var diss8 = document.getElementById("n8")
+    var diss9 = document.getElementById("n9")
+    var diss10 = document.getElementById("n10")
+    var diss11 = document.getElementById("n11")
+</script>
 </html>
