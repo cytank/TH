@@ -210,20 +210,36 @@
         display: flex;
     }
 
+    .klb div{
+        margin-left: 20px;
+    }
+
+    .halg,.halg2{
+        margin-left: 20px;
+    }
+
     .halg{
-        margin-right: 130px;
+        margin-right: 110px;
     }
 
     @media screen and (max-width: 1500px) {
         .form form{
             flex-direction: column-reverse;
             align-items: center;
-            margin-top: 500px;
+            margin-top: 315px;
         }
 
         .linkv{
             display: flex;
             width: 100%;
+        }
+
+        .linkv .input{
+            width: 100%;
+        }
+
+        .linkv label{
+            font-size: 20px;
         }
 
         .klb,.drs{
@@ -232,7 +248,71 @@
         }
     }
 
+    @media screen and (max-width: 1000px){
+        .wh{
+            flex-direction: column;
+        }
 
+        .klb,.drs{
+            width: 45%;
+        }
+
+        .linkv{
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and (max-width: 750px){
+        .linkv{
+            flex-direction: column;
+            align-items: center;
+        }
+        .klb,.drs{
+            width: 100%;
+        }
+
+        .linkv h1{
+            text-align: center;
+        }
+
+        .wh{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .halg,.halg2{
+            width: 50%;
+            margin: 0;
+        }
+
+        .halg{
+            margin-left: 20px !important;
+        }
+
+        .inputs{
+            width: 300px;
+        }
+
+        .input input{
+            width: 140px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .wh{
+            flex-direction: column;
+        }
+
+        .halg,.halg2{
+            margin-left: 40px !important;
+            width: 100%;
+        }
+
+        .form{
+            margin-top: 150px;
+        }
+    }
 </style>
 </body>
 <script src="js/main.js"></script>
