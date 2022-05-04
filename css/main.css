@@ -34,6 +34,7 @@ input:focus{
         position: fixed !important;
         width: 100%;
         z-index: 2;
+        top: 0;
     }
 
     .nav{
@@ -182,3 +183,253 @@ input:focus{
         transform: translate(0);
     }
 /* S.links end */
+
+/* Main {Club's} */
+    .form{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .form form{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 150px;
+    }
+
+    .linkv,
+    .input{
+        width: 40%;
+    }
+
+    .linkv h1{
+        font-family: 'Satisfy', cursive;
+        font-size: 50px;
+    }
+
+    .chcbx input{
+        background-color: transparent;
+    }
+
+    .chcbx label{
+        font-size: 27px;
+        text-indent: 10px;
+        cursor: pointer;
+    }
+
+    .drs{
+        margin-top: 75px;
+    }
+
+    .input{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input h2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .input input{
+        background: none;
+        border-bottom: 1px solid black !important;
+        border: none;
+    }
+
+    .input input::placeholder{
+        text-indent: 3px !important;
+    }
+
+    .inputs{
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    .inputs:nth-child(3) input{
+        width: 100%;
+    }
+
+    .inputs:nth-child(4) input:nth-child(1){width: 50px;}
+    .inputs:nth-child(4) input:nth-child(2){width: 330px;}
+
+    #submit{
+        border: 1px solid black !important;
+        padding: 2px 15px;
+        margin-top: 20px;
+    }
+
+    .wh{
+        display: flex;
+    }
+
+    .klb div{
+        margin-left: 20px;
+    }
+
+    .halg,.halg2{
+        margin-left: 20px;
+    }
+
+    .halg{
+        margin-right: 110px;
+    }
+
+    .lessons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+
+    .area{
+        width: 80%;
+    }
+
+    .less{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+
+    .pho{
+        width: 550px;
+        height: 350px !important;
+    }
+
+    .inf{
+        width: 50%;
+        margin-left: 20px;
+        overflow: hidden;
+    }
+
+    .inf p{
+        text-align: justify !important;
+    }
+
+    .pho img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    @media screen and (max-width: 1500px) {
+        .form form{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .linkv{
+            display: flex;
+            width: 100%;
+        }
+
+        .linkv .input{
+            width: 100%;
+        }
+
+        .linkv label{
+            font-size: 20px;
+        }
+
+        .klb,.drs{
+            width: 50%;
+            margin-top: 50px;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+        .wh{
+            flex-direction: column;
+        }
+
+        .klb,.drs{
+            width: 45%;
+        }
+
+        .linkv{
+            justify-content: space-between;
+        }
+
+        .less{
+            flex-direction: column;
+            margin-bottom: 100px;
+        }
+
+        .pho{
+            width: 100%;
+        }
+
+        .inf{
+            width: 100%;
+            margin: 0;
+        }
+
+        .inf h2{
+            text-align: center;
+            margin: 10px 0px;
+        }
+
+    }
+
+    @media screen and (max-width: 750px){
+        .linkv{
+            flex-direction: column;
+            align-items: center;
+        }
+        .klb,.drs{
+            width: 100%;
+        }
+
+        .linkv h1{
+            text-align: center;
+        }
+
+        .wh{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .halg,.halg2{
+            width: 50%;
+            margin: 0;
+        }
+
+        .halg{
+            margin-left: 20px !important;
+        }
+
+        .inputs{
+            width: 300px;
+        }
+
+        .input input{
+            width: 140px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .wh{
+            flex-direction: column;
+        }
+
+        .halg,.halg2{
+            margin-left: 40px !important;
+            width: 100%;
+        }
+
+        .inf h2{
+            font-size: 22px;
+            margin-top: 10px !important;
+        }
+    }
+
+/* Main {Club's} end */

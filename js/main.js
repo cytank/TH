@@ -6,7 +6,6 @@ function mycage(z){
         age.min = 9
     }
    
-    
     else{
         age.min = 13
     }
