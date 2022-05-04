@@ -25,6 +25,17 @@ input:focus{
     background-color: rgba(255, 255, 0, 0.466);
 }
 
+.center-f{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
 /* Navbar */
     .navbar{
         display: flex !important;
@@ -184,7 +195,7 @@ input:focus{
     }
 /* S.links end */
 
-/* Main {Club's} */
+/* Main {Club's / Lesson's} */
     .form{
         width: 80%;
         display: flex;
@@ -311,6 +322,48 @@ input:focus{
 
     .inf p{
         text-align: justify !important;
+        height: 160px;
+        overflow: hidden;
+    }
+
+    .mdr-btn{
+        margin-top: 20px;
+        width: 200px;
+        height: 50px;
+        position: relative;
+    }
+
+    .mdr-btn button{
+        color: white;
+        background: transparent;
+    }
+
+    .e{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        font-size: larger;
+        z-index: 3;
+    }
+
+    .hvr{
+        position: absolute;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: 4;
+        transition: 1s;
+        border-bottom: 3px solid goldenrod;
+    }
+
+    .mdr-btn:hover .hvr{
+        height: 100%;
+    }
+
+    .hvr button{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(204, 157, 40) !important;
     }
 
     .pho img{
@@ -432,4 +485,4 @@ input:focus{
         }
     }
 
-/* Main {Club's} end */
+/* Main {Club's / Lesson's} end */
